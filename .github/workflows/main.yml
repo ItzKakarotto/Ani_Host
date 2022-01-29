@@ -1,12 +1,18 @@
-name : discord bot
-
+name : AniRobot
 
 on:
     schedule:
       - cron: "0 */6 * * *"
     push:
-      branches: [ main ]
+      branches: [ huehue ]
     
+env:
+  ID: ${{secrets.ID}}
+  HASH: ${{secrets.HASH}}
+  TOKEN: ${{secrets.TOKEN}}
+  MONGO_URL: ${{secrets.MONGO_URL}}
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
