@@ -4,7 +4,7 @@ on:
     schedule:
       - cron: "0 */6 * * *"
     push:
-      branches: [ huehue ]
+      branches: [ ok-new-main-this ]
     
 env:
   ID: ${{secrets.ID}}
@@ -33,7 +33,7 @@ jobs:
        - name: cloning repo and install
          continue-on-error: true
          run: |
-           git clone https://${{ secrets.NAME }}:${{ secrets.GIT_TOKEN }}@github.com/DemonOfDemon/ani AniRobot && cd AniRobot && pip3 install -r requirements.txt
+           git clone https://${{ secrets.NAME }}:${{ secrets.GIT_TOKEN }}@github.com/DemonOfDemon/ani Ani && cd Ani && pip3 install -r requirements.txt
            pwd
        - name: Running
          timeout-minutes: 350
