@@ -1,2 +1,2 @@
 # Ani_Host
-# Code Belongs to [Nksama](GitHub.com/nksamax)
+This Code Belongs to Their Original Owner [Nksama](GitHub.com/nksama)
