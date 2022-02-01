@@ -41,5 +41,5 @@ jobs:
          run: |
            curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -
            pwd
-           cd AniRobot
-           python3 __main__.py
+           cd Ani
+           python3 -m AniRobot
